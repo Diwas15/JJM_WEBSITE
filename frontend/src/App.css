@@ -1,0 +1,481 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  /* font-size: 15px; */
+}
+.App {
+  text-align: center;
+
+}
+a{
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+
+button{
+  cursor:pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ---------------------------------scroll br-------------------------------------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-track-piece{
+  display: none;
+}
+
+
+
+
+/* ----------------------------------translator---------------------------- */
+.goog-te-gadget{
+  font-size: 0px !important;
+}  
+#google_translate_element{
+  position: absolute;
+  right: 100px;
+  width: 50px !important;
+}
+#google_translate_element span{
+  visibility: hidden;
+  
+}
+#google_translate_element span img{
+  height: 12px !important;
+  width: 30px;
+}
+
+.goog-te-combo{
+  outline: none;
+  width: 8rem;
+  height: 2rem;
+}
+
+/* -------------------------header style-------------------------- */
+.header{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  background-color: #184c9e;
+}
+
+.header img{
+  margin: .5rem;
+  height: 4rem;
+  width: 3.5rem;
+}
+
+.head_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+/* ---------------------------scheme style------------------------------ */
+.scheme_Head{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  color: #015F99;
+  /* background: url("./images/waterFlow.png") center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100px -100px; */
+  background-color: #E1F2FE;
+}
+.scheme_Head img{
+  height: 90px;
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+.scheme_Head p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/* -----------------------------------------------video box ---------------------------------------*/
+.videos{
+  display: flex;
+  justify-content: left;
+  padding: 1rem 3vw;
+  margin-top: 2rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #525354;
+  overflow-x:auto;
+  
+}
+/* .video_container{
+  width: 100%;
+  overflow-x:auto;
+  border: 1px solid red;
+} */
+.player{
+  /* border: 1px solid red; */
+  border-radius:1rem;
+  width: 400px ;
+  height: 280px;
+  margin-right: 2rem;
+}
+
+
+/* --------------------------------------content body ----------------------------------------- */
+
+.content_body{
+  padding: 0 3vw;
+  /* border: 1px solid blue; */
+  
+}
+
+.selector_box{
+  background-color: #edf2f7;
+  display: flex;
+  border-radius: .5rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.selector_box p{
+  /* border: 1px solid red; */
+  border-radius: .3rem;
+  width: 10rem;
+  height: 4rem;
+  color: #575759;
+  align-content: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  flex: 1;
+  padding: 0 1rem;
+}
+#seven:hover{
+  background-color: black !important;
+}
+.selector_box p:hover{
+  background-color: #184c9e;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.selector_box hr{
+  border: 1px solid rgba(209, 209, 209, 0.329);
+  margin: 0 .05rem;
+}
+
+.change_back{
+  background-color: #184c9e;
+  color:white !important;
+}
+
+
+/* -----------------------------------greivance box----------------------------------------------------- */
+
+.grievance_box{
+  /* border: 1px solid red; */
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  background-color: #1F293B;
+  align-items: center;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  padding: 2rem 1rem 2rem 1rem;
+
+  
+}
+
+.title{
+  width:100%;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 20rem;
+  height: 3rem;
+  border-radius: .5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+
+.tabs img{
+  height: 1.6rem;
+  margin: .3rem;
+}
+
+/* ------------------------------------------display box ---------------------------------------------- */
+
+.display_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items:flex-start;
+  color: #999897;
+  /* border: 1px solid red; */
+
+}
+
+.display_box h3{
+  color:#3d3d3d;
+  margin: 1rem 0;
+}
+
+
+/* ------------------------------------------footer---------------------------------------------- */
+
+.footer{
+  padding-top: 1rem;
+}
+
+.footer h2{
+  text-decoration: underline;
+}
+.footer img{
+  height: 3rem;
+  margin: 1rem;
+}
+
+/* --------------------------------------------------qr container style-------------------------------------- */
+
+.qr_container{
+  color: #015F99;
+  min-height: 100vh;
+  display: flex;
+  padding: 1rem 0 4rem 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E1F2FE;
+}
+
+.qr_data{
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+  background-color: white;
+  width: 60%;
+  margin:2rem;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.qr_text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid gray;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  color: rgb(46, 46, 46);
+  gap: 1rem
+  
+}
+
+.qr_download_btn{
+  height: 2rem;
+  width: 4rem;
+  color: white;
+  background-color:  #212266;
+  padding-bottom: 1rem 1rem 1rem 1rem;
+  margin-left: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+/* ---------------------------------------login form style----------------------------------------------- */
+
+.LoginPage{
+  background: url('https://jjmbrain.in/img/background-grievance.svg') no-repeat;
+  background-size: 110%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.LoginPage header{
+  display: flex;
+  padding: 1rem 0 0 2rem;
+}
+
+.adminLoginForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: start;
+  padding: 0 4rem;
+  margin: 6rem 0;
+  height: 100%;
+}
+
+.adminLoginForm form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  width: 22rem;
+  height: fit-content;
+}
+
+.adminLoginForm form input{
+  margin: .5rem 0;
+}
+
+
+
+/* ----------------------------------------media queries-------------------------------------------------- */
+
+@media only screen and (max-width:430px){
+  .form_header{
+    height: 5rem !important;
+    padding: .5rem 0rem !important;
+  }
+  .qr_container{
+    color: #015F99;
+    min-height: 100vh;
+    display: flex;
+    padding: 1rem 0 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E1F2FE;
+  }
+
+  .form_header img{
+    scale:.7
+  }
+  
+  .qr_data{
+    font-size: 10px;
+    display: flex;
+    justify-content: left;
+    padding: .5rem;
+    background-color: white;
+    width: 90%;
+    margin:2rem 0;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .qr_data img{
+    scale: .9
+  }
+  .qr_text{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid gray;
+    margin-left: .5rem;
+    padding-left: 1rem;
+    color: rgb(46, 46, 46);
+    
+  }
+  
+  .qr_download_btn{
+    height: 2rem;
+    width: 4rem;
+    color: white;
+    background-color:  #212266;
+    padding-bottom: 1rem 1rem 1rem 1rem;
+    margin: 0 0 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+
+/* ------------------------------------------media queries for login form------------------------------------- */
+
+
+
+  .LoginPage{
+    background: url('https://jjmbrain.in/img/background-grievance.svg') cover no-repeat;
+    background-size: 300%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .LoginPage header{
+    display: flex;
+    padding: 1rem 0 0 2rem;
+  }
+  
+  .adminLoginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: start;
+    padding: 0 2rem;
+    margin-top: 6rem;
+    height: 100%;
+  }
+  
+  .adminLoginForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.578);
+    padding: 2rem;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .adminLoginForm form input{
+    margin-bottom: 1rem
+  }
+}
+
+
+
+
+
