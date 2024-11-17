@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "npm run build && npm start",
     "start": "npm start --prefix server",
-    "build": "npm install --prefix ./ && npm install --prefix server && react-scripts build",
+    "build": "npm install --prefix ./ && npm install --prefix server && react-scripts build && npm install --prefix ../frontend && npm run build --prefix ../frontend",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
